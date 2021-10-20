@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: maroon;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        p{
+            background-color: chartreuse;
+            font-weight: bolder;
+            
+        }
+        
+        li > p{
+            display: none;
+        }
+        li:hover > .ja{
+            display: block
+        }
+        li:active > .acesso{
+            display: block;
+        }
+        li:active > .ja{ /* realiza configurações enquanto clico no link*/
+            display: none;
+        }
+        a:visited{          /* realiza configurações em links já acessados*/
+            color: royalblue;
+        }
+        
+        a:hover{
+            background-color: salmon;
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: rgb(253, 0, 0);
+        }
+
+        a::after{
+            content: '[Link]';
+            text-decoration: none;
+            font-weight: lighter;
+            color: paleturquoise ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/WilliRamon" target="_blanck">Repositório GitHub</a> <p class="ja">Já acessou</p> <p class="acesso">Tem certeza?</p> </li>
+        <li><a href="https://www.youtube.com/watch?v=DNvDPxwC5NY" target="_blanck">Canal do YouTube</a><p class="ja">Já acessou</p><p class="acesso">Tem certeza?</p></li>
+        <li><a href="https://www.cursoemvideo.com/login/" target="_blanck">Site do CursoemVideo</a><p class="ja">Já acessou</p><p class="acesso">Tem certeza?</p></li>
+    </ul>
+    
+</body>
+</html>

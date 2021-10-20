@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+     font-family: unset;
+     font-size: 1em;
+     color: rgb(175, 118, 13);
+     background-color: aqua;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: large;
+     font-weight: bolder;
+     font-style: italic;
+
+     }
+     h1{
+         background-color: black;
+         /*font-family: initial;
+         *font-weight: bolder;
+         *font-size: 3em;
+         *font-style: italic;
+
+         Consigo simplificar todo esse comando acima em apenas 1 linha.
+         Para isso, devo apenas seguir essa ordem:
+         font-style -> font-weight -> font-size -> font-family
+
+         Ficando assim:
+         */
+         font: italic bolder 3em sans-serif;
+     }
+       
+    
